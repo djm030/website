@@ -280,25 +280,3 @@ textarea {
   top: 0;
   background: rgba(26, 24, 22, 0.85);
 }
-
-#a {
-  width: 60%;
-  float: left;
-}
-#b {
-  width: 40%;
-  float: right;
-  text-align: left;
-  color: white ;
-}
-#info>p{
-  color: #fff;
-}
-#forminfo{
-  width: 100%;
-}
-
- input{
-  padding: 0;
-  border-width: 0;
-}
