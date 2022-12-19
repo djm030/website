@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>미니프로젝트</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <!-- 부트스트랩 css 불러오기 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
+  <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- <script language="javascript"> -->
+</head>
+<!-- 시작시 팝업창 popup.js 참고 -->
+
+<body id="hero" onload="javascript:pop()">
+  <!-- ======= 해더 ======= -->
+  <header id="header" class="fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img id="logo" class="logo" src="./image/miel_de_paris.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#carousel_container">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction">introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cake_list">production</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+  <div id="carousel_container" class="container-fluid slide_container" data-bs-spy="scroll" data-bs-target="#navbar"
+    data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2"
+    tabindex="0">
+    <div id="carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/banner/banner1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>크리스마스에 miel de paris의 다양한 프리미엄 케이크를 만나보세요</h5>
+            <h6>
+              완성도 높은 프리미엄 스타일의 디저트로 가족, 친구, 연인 등
+              소중한 사람들과 즐겁고 달콤한 크리스마스를 경험할 수 있는 miel de paris의
+              자부심이 담긴 다양한 케이크입니다.
+            </h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/banner2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>원하는 날짜&시간&매장에서 원하는 제품을 선택하세요.</h5>
+            <h6>
+              오븐에서 방금 꺼낸 빵이 가장 맛있다는 것을 알기에, miel de paris은
+              매장에서 직접 만드는 것에 그치지 않고, 고객들이 필요한 시간에
+              맞추는 세심하고 배려가 담긴 서비스로 가장 맛있는 케이크를
+              선물합니다.
+            </h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/banner3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              선별된 좋은 재료를 사용하여 더욱 건강한 제품을 제공하고자
+              합니다.
+            </h5>
+            <h6>
+              소중한 가족과 이웃에게 드리는 케이크이기에, miel de paris의 케이크는
+              들어간느 모든 재료 하나 하나 꼼꼼히 선별해서 사용합니다.
+            </h6>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">이전</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">다음</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------
+  슬라이드 배너 끝
+  ---------------------------------------------- -->
+  <div id="introduction" class="container-fluid introdution">
+    <div class="introduce_set">
+
+      <img class="img-fluid" src="./image/banner/introducion2.png" alt="" />
+      <img class="img-fluid" src="./image/banner/introducion3.png" alt="" />
+      <img class="img-fluid" src="./image/banner/introducion4.png" alt="" />
+      <img class="img-fluid" src="./image/banner/introducion5.png" alt="" />
+      <img class="img-fluid" src="./image/banner/introducion6.png" alt="" />
+      <img class="img-fluid" src="./image/banner/introducion7.png" alt="" />
+    </div>
+  </div>
+
+
+
+  <!-- ----------------------------------------------
+  안내 배너 끝
+  ---------------------------------------------- -->
+  <div id="cake_list" class="container-fluid row text-center">
+    <div class="container col-lg-3 col-md-4 com-sm-12 align-items-center">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="1.레드 워시 베리" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            1.레드 워시 베리
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake1.jpg" alt="error-message" />
+          <p class="cakeinfo">스테디 셀러 딸기 & 초코 플레이버로<br>맛과 화려한 리스 장식물로<br>비주얼
+            매력까지 갖춘<br>크리스마스 시즌 한정 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12 align-items-center">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="2.크리스마스 초코 생크림 쉬폰"
+            id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            2.크리스마스 초코 생크림 쉬폰
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake2.jpg" alt="error-message" />
+          <p class="cakeinfo">달콤한 초코 풍미가 느껴지는<br>부드러운 초코 쉬폰에<br>초코 생크림을 가득 샌드한<br>크리스마스 시즌 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-6">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="3. 해피 마스카포네 티라미수"
+            id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            3. 해피 마스카포네 티라미수
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake3.jpg" alt="error-message" />
+          <p class="cakeinfo">은은한 마스카포네 크림과<br>진한 콜드브루가 잘 어우러져<br>진한 풍미를 즐길 수 있는<br>티라미수 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="4.크리스마스 원더랜드 생크림"
+            id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            4.크리스마스 원더랜드 생크림
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake4.jpg" alt="error-message" />
+          <p class="cakeinfo">딸기가 샌드된 시트에<br>우유 생크림 듬뿍!<br>신선한 과일과 시즌 장식을 올린<br>크리스마스 원더랜드 생크림 케이크
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="5. 크리스마스 달콤 고구마" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            5. 크리스마스 달콤 고구마
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake5.jpg" alt="error-message" />
+          <p class="cakeinfo">산타의 선물상자가 올라간<br>크리스마스의<br>달콤하고 부드러운<br>고구마 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="6.메리 골드 치즈 케이크" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            6.메리 골드 치즈 케이크
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake6.jpg" alt="error-message" />
+          <p class="cakeinfo">
+            귀여운 시즌 장식물이<br>크리스마스를 더 빛내주는<br>진한 풍미의 촉촉하고
+            부드러운<br>치즈 케이크
+          </p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="7.모자 좋아! 눈사람" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            7.모자 좋아! 눈사람
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake7.jpg" alt="error-message" />
+          <p class="cakeinfo">화이트 시트 사이 카라멜 크림,<br>초코 크런치 크림이 달콤하게<br>어우러진 귀여운 털모자를 좋아하는<br>눈사람 케이크
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="8.원터 밀크 초코 얼그레이" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            8.원터 밀크 초코 얼그레이
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake8.jpg" alt="error-message" />
+          <p class="cakeinfo">촉촉한 초코 시트 사이<br>향긋하고 진한 얼그레이 크림과<br>달콤한 밀크초코 가나슈가 어우러진<br>케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="9.크리스마스 올스타 생크림" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            9.크리스마스 올스타 생크림
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake9.jpg" alt="error-message" />
+          <p class="cakeinfo">복숭아, 고구마, 녹차, 초코<br>4가지 베스트 케이크를 한 번에!<br>크리스마스가 더 즐거워지는<br>뚜레쥬르 올스타</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="10. 메리 고구마 라떼" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            10. 메리 고구마 라떼
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake10.jpg" alt="error-message" />
+          <p class="cakeinfo">우유와 고구마 무스가<br>한 잔의 고구마 라떼처럼 어우러져<br>크리스마스를 행복하게 빛내주는<br>부드러운 고구마 케이크
+          </p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="11" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            11. 눈 내리는 초코 마을
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake11.jpg" alt="error-message" />
+          <p class="cakeinfo">초코 시트 사이<br>달콤하고 진한<br>초코 크림이 샌드된<br>크리스마스 반전 초코 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="12. 윈터 생초코! 초코 케이크"
+            id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            12. 윈터 생초코! 초코 케이크
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake12.jpg" alt="error-message" />
+          <p class="cakeinfo">깊은 풍미의<br>발로나 초콜릿 케이크에<br>생크림을 듬뿍 올려<br>진하고 부드러운 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="13. 윈터 스트로베리 리치" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            13. 윈터 스트로베리 리치
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake13.jpg" alt="error-message" />
+          <p class="cakeinfo">상큼한 딸기에<br>풍부하고 달콤한 리치를 더해<br>두가지 과일 맛으로<br>새콤달콤한 생크림 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="14. 원더랜드 파티" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            14. 원더랜드 파티
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake14.jpg" alt="error-message" />
+          <p class="cakeinfo">달콤한 헤이즐넛 크림과<br>초코 크림이 잘 어우러진<br>크리스마스 시즌 한정<br>버터 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="15.트리맨의 초대" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            15.트리맨의 초대
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake15.jpg" alt="error-message" />
+          <p class="cakeinfo">마스카포네 바닐라빈 무스 안에<br>딸기꿀리를 샌드한<br>크리스마스 시즌 한정<br>무스 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12">
+      <div class="cakename">
+        <div class="cakename cake_num">
+          <input class="form-check-input" name="cake_chk" type="checkbox" value="16. 선물 줄게! 산타" id="cake_value_chk" />
+          <label class="form-check-label" for="cake_value_chk">
+            16. 선물 줄게! 산타
+          </label>
+        </div>
+        <div class="cakemenu">
+          <img class="cake" src="./image/cake/cake16.jpg" alt="error-message" />
+          <p class="cakeinfo">두 가지 초콜릿 시트 사이에<br>고소한 헤이즐넛 크림이 샌드되고<br>초코 크런치로 재밌는 식감을 살린<br>산타 케이크</p>
+        </div>
+        <p>가격 : 30000원</p>
+      </div>
+    </div>
+    <div class="container col-lg-3 col-md-4 com-sm-12 d-flex align-items-center justify-content-evenly">
+      <button type="button" class="btn btn-secondary btn-lg" onclick='getCheckboxValue()'>예약</button>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+  찾아오는길
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">찾아 오시는 길</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex">
+        <img id="map" class="image-fluid" src="/image/banner/map.png">
+      </div>
+     
+    </div>
+  </div>
+</div>
+     
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------
+  list 끝
+  ---------------------------------------------- -->
+
+ 
+
+  <!-- ----------------------------------------------
+  장소 끝
+  ---------------------------------------------- -->
+
+  <section id="bottombar" class="d-flex align-items-center fixed-bottom">
+    <div class="container-fluid row ">
+     <div id="form_info" class="container-fluid d-flex  col"> 
+
+
+      <h1><img src="./image/shoppingcart2.png"></h1>
+      <form id="formform" action="">
+        <table id="a">
+          <tr>
+            <td>
+              <input type="text" id="name" placeholder="이름">
+            </td>
+            <td>
+              <input type="tel" id="tel" placeholder="연락처">
+            </td>
+
+
+            <td>
+              <input id="selected_menu" type="text" placeholder="고른 메뉴">
+            </td>
+            <td>
+              <select id="date">
+                <option value="2022-12-19">2022-12-19</option>
+                <option value="2022-12-20">2022-12-20</option>
+                <option value="2022-12-21">2022-12-21</option>
+                <option value="2022-12-22">2022-12-22</option>
+                <option value="2022-12-23">2022-12-23</option>
+                <option value="2022-12-24">2022-12-24</option>
+                <option value="2022-12-25">2022-12-25</option>
+              </select>
+            </td>
+
+            <td>
+              <select id="time" >
+                <option value="10">10시</option>
+                <option value="11">11시</option>
+                <option value="12">12시</option>
+                <option value="13">13시</option>
+                <option value="14">14시</option>
+                <option value="15">15시</option>
+                <option value="16">16시</option>
+                <option value="17">17시</option>
+                <option value="18">18시</option>
+                <option value="19">19시</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="5">
+              <textarea id="abc" cols="50" cols="1" placeholder="요청 사항"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="5"><button type="submit">예약하기</button></td>
+          </tr>
+        </table>
+      </form>
+     </div>
+
+      
+      <div id="info" class="container-fluid col">
+        <p>매장 문의: 02)1234-5678</p>
+        <p>매장 위치: 대한민국 서울특별시 서초구 잠원동 강남대로 603</p>
+        <p>매장 시간: 오전10시 ~ 오후10시</p>
+        <button class="btn_top"><a href="#hero">맨위로</a></button>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------
+  bottombar,버튼 끝
+  ---------------------------------------------- -->
+
+  <!-- 부트스트랩 js 불러오기 -->
+  <!-- jquery불러오기 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <!-- 슬라이드 쇼 js -->
+  <!-- 팝업 js -->
+  <script src="./js/slide.js"></script>
+  <script src="./js/popup.js"></script>
+</body>
+
+</html>

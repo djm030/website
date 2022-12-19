@@ -1,0 +1,383 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+  background-color: #f6f0dc;
+  content: "";
+  opacity: 1;
+  z-index: -1;
+  position: absolute;
+  
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
+h1{
+  color: white;
+}
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+
+/* td {
+  border: 1px solid black;
+} */
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.btn_top {
+  position: absolute;;
+  bottom: 0;
+  right: 0;
+  margin: 80px;
+  border-radius: 50%;
+}
+
+.btn_top div {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.btn_top:hover {
+  background: #ffc064;
+  color: #fff;
+}
+
+.btn_top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+#header {
+  top: 0px;
+  max-height: 70px;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  top: 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #ffb03b;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(39, 37, 34, 0.9);
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #433f39;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #ffb03b;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #ffb03b;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# SlideShow
+--------------------------------------------------------------*/
+
+
+#carousel_container{
+  width: 60%;
+  overflow: hidden;
+  padding-top: 70px;
+ }
+ .carousel-item > img {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.9;
+} 
+
+/*--------------------------------------------------------------
+# introducion_list
+--------------------------------------------------------------*/
+
+.introducion{
+  width: 100%;
+  max-height: 300px;
+}
+
+
+/*--------------------------------------------------------------
+# cake_list
+--------------------------------------------------------------*/
+
+
+#cake_list
+{
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.cake {
+  width: 250px;
+}
+.cakename {
+  padding: 10px;
+  
+}
+.cakenum{
+  background-color: #433f39;
+  
+}
+.cakeinfo {
+  position: absolute;
+  opacity: 0;
+  transform: translate(3vw, -150%);
+  
+}
+/* 글씨 조정 */
+.cakemenu:hover .cakeinfo {
+  opacity: 0.3;
+  background-color: black;
+  color: white;
+}
+/* 마우스 올라가면 글씨 보임 */
+.cakeinfo {
+  width: 250px;
+}
+/* #cake_value_chk:focus .cakename{
+  border: 2px solid #433f39  ;
+
+} */
+/*--------------------------------------------------------------
+# BottomBar
+--------------------------------------------------------------*/
+
+#bottombar {
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#bottombar.bottombar-transparent {
+  background: transparent;
+}
+
+#bottombar.bottombar-scrolled {
+  top: 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#a {
+  width: 60%;
+  float: left;
+}
+#b {
+  width: 40%;
+  float: right;
+  text-align: left;
+  color: white ;
+}
